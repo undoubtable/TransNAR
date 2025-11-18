@@ -27,7 +27,6 @@ TEXT_PATH = "data/text/bfs_text_train.jsonl"
 ROOT = "data/raw"     # 和前面 SALSACLRS 一致
 ALGO = "bfs"
 
-
 # ===== 1. 文本 Dataset：把 text_in + text_out 拼成一个序列 =====
 
 class BFSTextSeqDataset(Dataset):
@@ -158,7 +157,7 @@ def main():
         d_nar=nar_hidden_dim,
         n_heads=4,
         num_layers=4,
-        max_len=256
+        max_len=512
     ).to(DEVICE)
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4)

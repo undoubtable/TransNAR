@@ -62,7 +62,7 @@ def main():
         algorithm=ALGO,
         num_samples=NUM_SAMPLES,
         graph_generator="er",
-        graph_generator_kwargs={"n": 16, "p": 0.1},
+        graph_generator_kwargs={"n": 16, "p": 0.1}, # 改为 32 节点生成测试集
         hints=True,
     )
 
@@ -73,7 +73,7 @@ def main():
     print("  s shape:", g0.s.shape)
     print("  reach_h shape:", g0.reach_h.shape)
 
-    out_path = "data/text/bfs_text_train.jsonl"
+    out_path = "data/text/bfs_text_train.jsonl" # 改为 bfs_text_test_32.jsonl 以生成测试集
     with open(out_path, "w", encoding="utf-8") as f:
         for idx in range(len(dataset)):
             g = dataset[idx]
