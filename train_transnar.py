@@ -38,7 +38,7 @@ class BFSTextSeqDataset(Dataset):
       -encode 成 token id 列表
     只需要 input_ids 和 graph_idx，目标序列用 LM 的方式: 预测下一个 token。
     """
-    def __init__(self, jsonl_path, tokenizer, max_len=256):
+    def __init__(self, jsonl_path, tokenizer, max_len=512):
         self.samples = []
         self.tokenizer = tokenizer
         self.max_len = max_len
@@ -116,7 +116,7 @@ def main():
     pad_id = tokenizer.token2id[tokenizer.pad_token]
 
     # 2) 文本 Dataset + DataLoader
-    text_ds = BFSTextSeqDataset(TEXT_PATH, tokenizer, max_len=256)
+    text_ds = BFSTextSeqDataset(TEXT_PATH, tokenizer, max_len=512)
     text_loader = DataLoader(
         text_ds,
         batch_size=16,
