@@ -1,7 +1,7 @@
 # TRANSNAR
 
 简要说明
-参照文章《Transformers meet Neural Algorithmic Reasoners》 文章链接如下：[text](https://arxiv.org/abs/2406.09308v1) 。这里依据文章的思路尝试进行简单的复现与读者理解。
+参照文章《Transformers meet Neural Algorithmic Reasoners》 文章链接如下：[https://arxiv.org/abs/2406.09308v1](https://arxiv.org/abs/2406.09308v1) 。这里依据文章的思路尝试进行简单的复现与读者理解。
 
 TRANSNAR 是一个轻量级的序列到序列/无自回归（NAR）训练/实验目录，基于本工作区中的模型与训练脚本（例如 `train_transnar.py`、`train_nar.py`）。本项目提供用于快速跑通训练流程的脚本、模型保存与检查点管理目录结构，适合做快速原型、调参与小规模复现实验。
 
