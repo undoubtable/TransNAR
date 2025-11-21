@@ -1,4 +1,5 @@
 # TRANSNAR
+[![中关村学院 GitHub 组织](https://img.shields.io/badge/Linked%20to-bjzgcai%20Org-blue?logo=github)](https://github.com/bjzgcai)
 
 简要说明
 参照文章《Transformers meet Neural Algorithmic Reasoners》 文章链接如下：[https://arxiv.org/abs/2406.09308v1](https://arxiv.org/abs/2406.09308v1) 。这里依据文章的思路尝试进行简单的复现与读者理解。
@@ -24,7 +25,7 @@ TRANSNAR 是一个轻量级的序列到序列/无自回归（NAR）训练/实验
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-pip install -r ..\SALSA-CLRS\requirements.txt
+pip install -r ..\TransNAR\requirements.txt
 ```
 
 如果你在一个独立环境下运行 `TRANSNAR`，也可以在本目录下添加或维护单独的 `requirements.txt`。
@@ -37,7 +38,7 @@ pip install -r ..\SALSA-CLRS\requirements.txt
 PowerShell 运行示例：
 
 ```powershell
-cd .\TRANSNAR
+cd .\TransNAR
 
 # 优先运行 NAR 训练
 python .\train_nar.py #会在 /data/raw/ 文件夹下生成图数据，然后训练NAR

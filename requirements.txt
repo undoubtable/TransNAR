@@ -1,0 +1,10 @@
+torch
+torch-geometric
+salsaclrs
+
+# Notes:
+# - `torch-geometric` (PyTorch Geometric) often requires additional packages
+#   (torch-scatter, torch-sparse, torch-cluster, etc.) and a CUDA-specific
+#   wheel. Install it following the official instructions:
+#   https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
+# - Pin versions if you need reproducible installs (e.g., `torch==1.12.1`).
